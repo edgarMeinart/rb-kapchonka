@@ -1,4 +1,4 @@
 en:
   kapchonka:
-    placeholder: 'Placeholder'
-    label: 'Label'
+    placeholder: 'Answer of equation'
+    label: 'Solve equation and type answer!'

@@ -1,7 +1,12 @@
+scss:
+  .kapchonka {
+    width: 30%; min-width: 300px;
+  }
+
 .kapchonka
   .kapchonka-image
     img  src="data:image/png;base64,#{image_data}"
   .kapchonka-input
-    input type="number" name="#{input_name}" placeholder="#{I18n.t 'kapchonka.placeholder'}"
+    input type="number" name="#{input_name}" placeholder="#{I18n.t 'kapchonka.placeholder'}" required="required"
   .kapchonka-label
     = I18n.t 'kapchonka.label'
