@@ -88,6 +88,27 @@ class PostsController < ApplicationController
 end
 ~~~
 
+### Redis
+
+Kapchonka also support redis!
+
+Add redis gem to gemfile:
+
+~~~ ruby
+  gem 'redis'
+~~~
+
+update initilizer:
+
+~~~ ruby
+redis = Redis.new host: '127.0.0.1', port: 6379
+
+Kapchonka.setup do |k|
+  k.store = :redis
+  k.redis = redis
+end
+~~~
+
 ### I18n:
 ~~~ yaml
 en:
