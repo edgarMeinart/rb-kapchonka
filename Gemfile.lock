@@ -64,6 +64,7 @@ GEM
     lumberjack (1.0.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    memcached (1.8.0)
     method_source (0.8.2)
     mime-types (2.4.3)
     minitest (5.5.0)
@@ -144,6 +145,7 @@ PLATFORMS
 DEPENDENCIES
   guard-rspec
   kapchonka!
+  memcached
   redis
   rspec
   rspec-rails

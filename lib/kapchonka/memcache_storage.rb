@@ -4,9 +4,8 @@ module Kapchonka
     class << self
 
       def save! key, value
-        @redis = Kapchonka.driver
-        @redis.set key.to_s, value.to_s
-        @redis.expire key, Kapchonka.expire
+        memcache = Kapchonka.driver
+        memcache.set key.to_s, value.to_s, Kapchonka.expire
       end
 
       def get key
@@ -14,7 +13,7 @@ module Kapchonka
       end
 
       def remove! key
-        Kapchonka.driver.del key.to_s
+        Kapchonka.driver.delete key.to_s
       end
 
     end

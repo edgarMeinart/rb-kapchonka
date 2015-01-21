@@ -11,6 +11,8 @@ module Kapchonka
           require 'kapchonka/test_storage.rb'
         when :redis
           require 'kapchonka/redis_storage.rb'
+        when :memcache
+          require 'kapchonka/memcache_storage.rb'
         when :session
           require 'kapchonka/session_storage.rb'
         else
