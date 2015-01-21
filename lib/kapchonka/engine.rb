@@ -9,8 +9,9 @@ module Kapchonka
       case Kapchonka.store
         when :test
           require 'kapchonka/test_storage.rb'
+        when :redis
+          require 'kapchonka/redis_storage.rb'
         when :session
-          include ActionDispatch::Session
           require 'kapchonka/session_storage.rb'
         else
           raise StandardError.new("Unknown store: #{Kapchonka.store}")
