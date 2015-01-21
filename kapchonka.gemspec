@@ -21,4 +21,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency  'rmagick'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'redis'
 end
