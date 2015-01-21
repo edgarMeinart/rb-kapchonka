@@ -109,6 +109,18 @@ Kapchonka.setup do |k|
 end
 ~~~
 
+### Memcached
+
+update initilizer:
+
+~~~ ruby
+ memcache = Memcached.new("localhost:11211")
+ Kapchonka.setup do |k|
+   k.store = :memcache
+   k.driver = memcache
+ end
+~~~
+
 ### I18n:
 ~~~ yaml
 en:
